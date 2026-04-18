@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+  </head>
+  <body>
+    <div class="add-book">
+      <label for="book-name">Book Name:</label>
+      <input type="text" id="book-name" />
+      <label for="book-Pages">Book Pages:</label>
+      <input type="number" id="book-pages" />
+      <label for="book-Author">Book Author:</label>
+      <input type="text" id="book-Author" />
+      <label for="book-Genre">Book Genre:</label>
+      <select name="book-Genre" id="book-Genre">
+        <option value="fanfic">fanfic</option>
+        <option value="non fanfic">non fanfic</option>
+      </select>
+      <button id="btnAddBook">Add To Library</button>
+    </div>
+    <div class="library-container" id="library-container"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
