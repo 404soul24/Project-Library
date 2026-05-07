@@ -42,3 +42,10 @@ body{
     font-size: 1.2rem;
     color: #ffeb3b;
 }
+input:required:invalid {
+    border-bottom: 2px solid orange;
+}
+input:user-invalid {
+    border: 2px solid red;
+    background-color: #fff0f0;
+}

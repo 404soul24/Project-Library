@@ -8,18 +8,22 @@
   </head>
   <body>
     <div class="add-book">
+      <form id="addBookForm" novalidate>
       <label for="book-name">Book Name:</label>
-      <input type="text" id="book-name" />
+      <input type="text" id="book-name" required />
       <label for="book-Pages">Book Pages:</label>
-      <input type="number" id="book-pages" />
+      <input type="number" id="book-pages" min="1" required />
       <label for="book-Author">Book Author:</label>
-      <input type="text" id="book-Author" />
+      <input type="text" id="book-Author" required />
       <label for="book-Genre">Book Genre:</label>
-      <select name="book-Genre" id="book-Genre">
+      <select name="book-Genre" id="book-Genre" required>
+        <option value="">Select a genre</option>
         <option value="fanfic">fanfic</option>
         <option value="non fanfic">non fanfic</option>
       </select>
-      <button id="btnAddBook">Add To Library</button>
+      <button type="button" id="btnAddBook">Add To Library</button>
+      <p id="message"></p>
+      </form>
     </div>
     <div class="library-container" id="library-container"></div>
     <script src="script.js"></script>
